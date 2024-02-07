@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Hallo_Doc.props" />
+</Project>

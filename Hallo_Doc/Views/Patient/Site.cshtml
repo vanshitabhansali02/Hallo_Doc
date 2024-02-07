@@ -1,0 +1,22 @@
+﻿
+
+    @{
+    ViewData["Title"] = "Site";
+}
+@Html.Partial("_headermain")
+    <div class="d-flex flex-column justify-content-around align-items-center mt-5">
+        <button type="button" class="btn btn-info btn-lg p-3 text-white mb-3 " onclick="location.href='@Url.Action("request", "patient")'"  style="width:30%">
+            Submit A Request
+        </button>
+
+        <button type="button" class="btn  btn-lg p-3 mb-5 text-white " onclick="location.href='@Url.Action("login", "patient")'" style="width:30%; background-color:darkblue">
+            Registered Patients
+        </button>
+      <div>
+
+           
+        </div>
+    </div>
+
+    @Html.Partial("_footermain");
+

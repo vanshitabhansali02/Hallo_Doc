@@ -1,0 +1,193 @@
+/*******platform_login********/
+.icons1 {
+    position: absolute;
+    top: 42%;
+    left: 90%;
+}
+.login-btn{
+    cursor:pointer;
+}
+.icons2 {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
+/****dark mode*/
+.body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/***** patient-site*********/
+.moon-patient-site {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+}
+
+.patient-site-btn1 {
+    margin-top: 5%;
+}
+
+.footerpatient {
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    bottom: 2%;
+}
+
+
+/*********** patient-request****************/
+
+.patient-img {
+    height: 50%;
+    width: 50%;
+}
+
+.btn-patient-req {
+    position: absolute;
+    right: 5%;
+}
+
+.patient-btn {
+    width: 11rem;
+    height: 3rem;
+    border-color: rgb(122, 122, 255);
+    color: rgb(122, 122, 255);
+    font-size: 20px;
+    background-color: rgb(221, 221, 221);
+    width: 280px;
+}
+
+    .patient-btn:hover {
+        border-color: rgb(122, 122, 255);
+    }
+
+.family-btn {
+    font-size: 20px;
+    background-color: rgb(227, 242, 245);
+    width: 280px;
+}
+
+    .family-btn:hover {
+        background: none;
+    }
+
+.concierge-btn {
+    color: rgb(43, 160, 43);
+    border-color: rgb(90, 168, 90);
+    font-size: 20px;
+    background-color: rgb(227, 253, 227);
+    width: 280px;
+}
+
+    .concierge-btn:hover {
+        border-color: rgb(90, 168, 90);
+    }
+
+.business-btn {
+    color: rgb(214, 20, 156);
+    border-color: rgb(207, 22, 152);
+    font-size: 20px;
+    background-color: rgb(252, 225, 229);
+    width: 280px;
+}
+
+    .business-btn:hover {
+        border-color: rgb(207, 22, 152);
+        background: none;
+    }
+
+.footer-patient {
+    position: fixed;
+    margin-top: 20%;
+    ;
+}
+/**patient-login******/
+.background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+<<<<<<< HEAD
+    background-image: url("/Patient/images/platform_login.jpg");
+=======
+    background-image: url("../images/platform_login.jpg");
+>>>>>>> created 3 tier architecture
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+/*****reset password*******/
+.icons3{
+    position:absolute;
+    top:55%;
+    left:58%;
+}
+
+/******button ***/
+.fileupload {
+    background-color: indigo;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#file-chosen {
+    margin-left: 0.3rem;
+    font-family: sans-serif;
+}
+
+
+/****tele*******/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+body {
+    height: 100%;
+    margin: 0
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+
+
+/*------------*/
+.custom-file-input {
+}
+
+.iti {
+    width: 100%;
+}

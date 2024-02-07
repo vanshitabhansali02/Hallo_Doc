@@ -1,0 +1,161 @@
+﻿
+@{
+    ViewData["Title"] = "Concierge";
+}
+@Html.Partial("_modal");
+@Html.Partial("_header");
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>@ViewData["Title"] - HalloDoc</title>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/HalloDoc.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div class="container border border-0 align-items-center mt-3">
+
+    <div class="m-3 d-flex justify-content-end ">
+        <div>
+            <button type="button" class="btn btn-outline-info p-2 pe-3 mt-5 button-info" onclick="location.href='@Url.Action("Request", "Patient")'">
+                <i class="bi bi-chevron-left i-info"></i>Back
+            </button>
+        </div>
+    </div>
+
+    <form action="" class="shadow p-5">
+        <h4 class="fw-semibold mb-4">Consierge Information</h4>
+
+        <div class="row gy-3">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="First Name">
+                    <label for="comment" class="floatingLabel text-dark">Your First Name</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                    <label for="comment" class="floatingLabel text-dark">your Last Name</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="tel" class="form-control p-3 ps-5" class="phoneNumber" placeholder="(201) 555-0123">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <label for="comment" class="floatingLabel text-dark">Email</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Hotel/Property Name">
+                    <label for="comment" class="floatingLabel text-dark">Hotel/Property Name</label>
+                </div>
+            </div>
+
+        </div>
+
+        <h4 class="fw-semibold my-4 mt-5">Concierge Location</h4>
+
+        <div class="row gy-3">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Street">
+                    <label for="comment" class="floatingLabel text-dark">Street</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="City">
+                    <label for="comment" class="floatingLabel">City</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="State">
+                    <label for="comment" class="floatingLabel text-dark">State</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="number" class="form-control" placeholder="Zip Code">
+                    <label for="comment" class="floatingLabel text-dark">Zip Code</label>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="fw-semibold my-4 mt-5">Patient Information</h4>
+        <div class="form-floating">
+            <textarea class="form-control my-3" placeholder="Leave a comment here" id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Enter Brief Details of Symtoms (Optional)</label>
+        </div>
+        <div class="row gy-3">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="First Name">
+                    <label for="comment" class="floatingLabel text-dark">First Name</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                    <label for="comment" class="floatingLabel text-dark">Last Name</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="date" class="form-control" placeholder="Date of Birth">
+                    <label for="comment" class="floatingLabel text-dark">Date of Birth</label>
+                </div>
+            </div>
+        </div>
+
+
+        <h4 class="fw-semibold my-4 mt-5">Patient Contact Info</h4>
+        <div class="row gy-3">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <label for="comment" class="floatingLabel text-dark">Email</label>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="tel" class="form-control p-3 ps-5" class="phoneNumber" placeholder="(201) 555-0123">
+                </div>
+            </div>
+        </div>
+
+        <h4 class="fw-semibold my-4 mt-5">Patient Location</h4>
+
+        <div class="row gy-3">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-floating">
+                    <input type="number" class="form-control" placeholder="Room #/Suite (Optional)">
+                    <label for="comment" class="floatingLabel text-dark">Room #/Suite (Optional)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-end my-4 mb-5">
+            <button type="button" class="btn btn-info p-2 px-4 me-3">Submit</button>
+            <button type="button" class="btn btn-outline-info p-2 px-4 button-info">Cancel</button>
+        </div>
+    </form>
+
+@Html.Partial("_footer");

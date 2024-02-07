@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Request";
+}
+@Html.Partial("_header");
+<div class="container mt-5">
+<div class="container  d-flex justify-content-around mt-5">
+    <h3></h3>
+    <p class="fs-3 mt-5 "> I am a... </p>
+    <button class="btn btn-outline-info mt-5  " onclick="location.href='@Url.Action("site", "patient")'">
+        <i class="fa fa-chevron-left"></i>
+        &nbsp;<strong>Back</strong>
+    </button>
+</div>
+
+
+<div class="m-2 d-flex flex-column jutify-content-center align-items-center">
+
+
+    <button type="button" class="btn m-2  patient-btn " onclick="location.href='@Url.Action("patients","patient")'">Patient</button>
+    <button type="button" class="btn   family-btn m-2  " onclick="location.href='@Url.Action("family", "patient")'">Family/Friend</button>
+    <button type="button" class="btn   m-2  concierge-btn  " onclick="location.href='@Url.Action("concierge", "patient")'">Concierge</button>
+    <button type="button" class="btn m-2  business-btn  " onclick="location.href='@Url.Action("business", "patient")'">
+        Business
+        Partners
+    </button>
+</div>
+</div>
+@Html.Partial("_footer");
+
