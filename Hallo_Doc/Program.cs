@@ -3,10 +3,13 @@
 using BusinessLogic.Interfaces;
 using BusinessLogic.Services;
 using DataAccess.DataContext;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+options.UseNpgsql(builder.Configuration.GetConnectionString("ApplicationDbContext")));
 builder.Services.AddScoped<ILoginService, LoginService>();
-builder.Services.AddScoped<ApplicationDbContext>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

@@ -1,34 +1,36 @@
-﻿using BusinessLogic.Interfaces;
-using DataAccess.DataContext;
-using DataAccess.DataModels;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿    using BusinessLogic.Interfaces;
+    using DataAccess.ViewModel;
+    using DataAccess.DataModels;
+    using DataAccess.DataContext;
+    using DataAccess.ViewModel;
+    using Microsoft.EntityFrameworkCore;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-namespace BusinessLogic.Services
-{
-    public class LoginService : ILoginService
+    namespace BusinessLogic.Services
     {
-        private readonly ApplicationDbContext _dbContext; // Replace YourDbContext with your actual DbContext class
-
-        public LoginService(ApplicationDbContext dbContext)
+        public class LoginService : ILoginService
         {
-            _dbContext = dbContext;
-        }
+
+            private readonly ApplicationDbContext _db;
+
+            public LoginService(ApplicationDbContext db)
+            {
+                _db = db;
+            }
+
+            public bool LoginData(LoginUser loginuser)
+            {
 
 
-        public bool LoginUser(string username, string password)
-        {
-            var user=  _dbContext.Aspnetusers.FirstOrDefault(u =>
-         u.Email == username &&
-         u.Passwordhash == password);
-            return user != null;
+                return _db.Aspnetusers.Any(x => x.Email == loginuser.email && x.Passwordhash == loginuser.password);
 
-            // Implement your user validation logic here
-            // Return true if the user is valid, false otherwise
+            }
+
+
         }
     }
-}
+

@@ -257,3 +257,5 @@ C:\Users\pca135\Desktop\Hallo_Doc\Hallo_Doc\bin\Debug\net7.0\BusinessLogic.dll
 C:\Users\pca135\Desktop\Hallo_Doc\Hallo_Doc\bin\Debug\net7.0\DataAccess.dll
 C:\Users\pca135\Desktop\Hallo_Doc\Hallo_Doc\bin\Debug\net7.0\BusinessLogic.pdb
 C:\Users\pca135\Desktop\Hallo_Doc\Hallo_Doc\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\pca135\Desktop\Hallo_Doc\Hallo_Doc\bin\Debug\net7.0\xunit.abstractions.dll
+C:\Users\pca135\Desktop\Hallo_Doc\Hallo_Doc\bin\Debug\net7.0\xunit.core.dll

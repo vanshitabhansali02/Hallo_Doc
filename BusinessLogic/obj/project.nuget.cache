@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2E8CviSGx22YUkfhrlpEPh4vfCh8owY3co1VTMtQRDUHTSCwQKfoYEZCPs8YDsE4tvOkZ4/C2E8FL54D8ozyzw==",
+  "dgSpecHash": "67e6JEIDeRxoMQw4zwm8YJjXQZBh9kLEqMhJs6QOy8Jbf7rRAjBO+lHRpzNQ3/aljEzwfkKb0/gdb1JhnS6tLg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pca135\\Desktop\\Hallo_Doc\\BusinessLogic\\BusinessLogic.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,9 @@
     "C:\\Users\\pca135\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\pca135\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\pca135\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
-    "C:\\Users\\pca135\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512"
+    "C:\\Users\\pca135\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
+    "C:\\Users\\pca135\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\pca135\\.nuget\\packages\\xunit.extensibility.core\\2.6.6\\xunit.extensibility.core.2.6.6.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,7 +1,7 @@
 ﻿using BusinessLogic.Interfaces;
 using BusinessLogic.Services;
 using DataAccess.DataModels;
-using DataAccess.DataModels.Custom_Model;
+using DataAccess.ViewModel;
 using Hallo_Doc.Models;
 using Hallo_Doc.Views.Patient;
 using Microsoft.AspNetCore.Mvc;
@@ -18,6 +18,22 @@ namespace Hallo_Doc.Controllers
             _logger = logger;
             _loginService = loginService;
         }
+        [HttpPost]
+        public IActionResult Login(LoginUser loginuser)
+        {
+            if (_loginService.LoginData(loginuser))
+            {
+                // User is valid, perform login logic
+                return RedirectToAction("Site", "Patient");
+
+            }
+           
+                // Invalid user, handle accordingly (e.g., show error message)
+                return RedirectToAction("Family", "Patient");
+
+            
+        }
+
 
         public IActionResult Site()
         {
@@ -51,22 +67,6 @@ namespace Hallo_Doc.Controllers
         public IActionResult Business()
         {
             return View();
-        }
-        [HttpPost]
-        public IActionResult Login(LoginUser model)
-        {
-            if (_loginService.LoginUser(model.Email, model.Password))
-            {
-                // User is valid, perform login logic
-                return RedirectToAction("Site", "Patient");
-
-            }
-            else
-            {
-                // Invalid user, handle accordingly (e.g., show error message)
-                return RedirectToAction("Login", "Patient");
-
-            }
         }
 
 

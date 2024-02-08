@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "k57zPBw+TEoqEhg0rXHAIk4LffrCqw+AHgjwIVr662NovWy2vdMRLIdSX9EyQ5FKcN4EPFtWpFldpz9CJHs8sA==",
+  "dgSpecHash": "omoWS3/4Gw1+AkHmJfjWMWpzTRLY6KlIrTkfwFaL/+uo6No+mIZYINQe7dVZTV6RcgB+U+hlFlYnSHDMw8BXvA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pca135\\Desktop\\Hallo_Doc\\Hallo_Doc\\Hallo_Doc.csproj",
   "expectedPackageFiles": [
@@ -227,7 +227,9 @@
     "C:\\Users\\pca135\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\pca135\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\pca135\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\pca135\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\pca135\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\pca135\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\pca135\\.nuget\\packages\\xunit.extensibility.core\\2.6.6\\xunit.extensibility.core.2.6.6.nupkg.sha512"
   ],
   "logs": []
 }

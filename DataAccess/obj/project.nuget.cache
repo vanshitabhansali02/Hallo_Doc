@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "r+LViAHoKcbgf/LyktShfq65+nA42GDNOjndsQ2Bzg5QUN4sgqGOYZ/sKdIcUotW/OqKvhCthm9hvjGJxXrsoA==",
+  "dgSpecHash": "82peh9aWasIyXu+1vAFj4YBui6oR4dsB0fPzQrdet2/9aIsYXlPxMe146tHzW21ivexhzRrIS3X9SCOasA0EaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pca135\\Desktop\\Hallo_Doc\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,9 @@
     "C:\\Users\\pca135\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
     "C:\\Users\\pca135\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\pca135\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\pca135\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\pca135\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\pca135\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\pca135\\.nuget\\packages\\xunit.extensibility.core\\2.6.6\\xunit.extensibility.core.2.6.6.nupkg.sha512"
   ],
   "logs": []
 }

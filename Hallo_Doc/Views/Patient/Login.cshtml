@@ -1,7 +1,10 @@
-﻿@{
+﻿@using DataAccess.ViewModel;
+@model LoginUser;
+@{
     ViewData["Title"] = "login";
 }
 
+    
 @Html.Partial("_headermain")
 
 <div class="container-fluid">
@@ -18,14 +21,14 @@
             &nbsp;<strong class="text-info">Back</strong></a>
 
             <h1 class="">Login to Your Account</h1>
-            <form  action="/Patient/Site" method="post">
+            <form   method="post">
             <div class="form-floating mt-4">
-                <input type="text" class="form-control form-control-lg col-xs-12" id="floatingInput" placeholder="Email" required>
+                <input type="text" class="form-control form-control-lg col-xs-12" id="floatingInput" placeholder="email" asp-for="email"/>
                 <label for="floatingInput">Email</label>
                 <i class="fa fa-user icons1"></i>
             </div>
             <div class="form-floating mt-3">
-                <input type="password" class="form-control form-control-lg col-xs-12" id="floatingInput" placeholder="Password" required>
+                <input type="password" class="form-control form-control-lg col-xs-12" id="floatingInput" placeholder="password" asp-for="password" />
                 <label for="floatingInput">Password</label>
                 <i class="fa fa-eye icons2"></i>
             </div>
@@ -39,7 +42,7 @@
 
             <button class="btn btn-info btn-lg col-lg-12 mt-4" type="submit">Log in</button>
             </form>
-            <p class="font-weight-normal login-btn text-center text-info m-4" onclick="location.href='@Url.Action("reset", "patient")'">Forget Password?</p>
+            <p class="font-weight-normal login-btn text-center text-info m-4" onclick="location.href='@Url.Action("reset", "patient")">Forget Password?</p>
         </div>
     </div>
     @Html.Partial("_footermain")
