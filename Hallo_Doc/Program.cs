@@ -1,10 +1,15 @@
-using Hallo_Doc.DataAccess;
+
+
+using BusinessLogic.Interfaces;
+using BusinessLogic.Services;
+using DataAccess.DataContext;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<ApplicationDbContext>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<ApplicationDbContext>();
+
 
 
 var app = builder.Build();

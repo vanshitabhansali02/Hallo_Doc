@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hallo_Doc.DataModels;
+namespace DataAccess.DataModels;
 
 [Table("business")]
 public partial class Business

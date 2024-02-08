@@ -1,4 +1,9 @@
-﻿using Hallo_Doc.Models;
+﻿using BusinessLogic.Interfaces;
+using BusinessLogic.Services;
+using DataAccess.DataModels;
+using DataAccess.DataModels.Custom_Model;
+using Hallo_Doc.Models;
+using Hallo_Doc.Views.Patient;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -7,10 +12,11 @@ namespace Hallo_Doc.Controllers
     public class PatientController : Controller
     {
         private readonly ILogger<PatientController> _logger;
-
-        public PatientController(ILogger<PatientController> logger)
+        private readonly ILoginService _loginService;
+        public PatientController(ILogger<PatientController> logger,ILoginService loginService)
         {
             _logger = logger;
+            _loginService = loginService;
         }
 
         public IActionResult Site()
@@ -46,6 +52,23 @@ namespace Hallo_Doc.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Login(LoginUser model)
+        {
+            if (_loginService.LoginUser(model.Email, model.Password))
+            {
+                // User is valid, perform login logic
+                return RedirectToAction("Site", "Patient");
+
+            }
+            else
+            {
+                // Invalid user, handle accordingly (e.g., show error message)
+                return RedirectToAction("Login", "Patient");
+
+            }
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
