@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\BusinessLogic",
-    "\\DataAccess",
-    "\\DataAccess\\DataContext",
-    "\\Hallo_Doc",
-    "\\Hallo_Doc\\Views",
-    "\\Hallo_Doc\\Views\\Patient",
-    "\\Hallo_Doc\\Views\\Shared"
+    ""
   ],
-  "SelectedNode": "\\DataAccess\\DataModels",
+  "SelectedNode": "\\Hallo_Doc.sln",
   "PreviewInSolutionExplorer": false
 }
