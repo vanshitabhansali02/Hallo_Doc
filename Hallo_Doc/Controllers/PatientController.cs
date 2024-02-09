@@ -1,6 +1,6 @@
 ﻿using BusinessLogic.Interfaces;
 using BusinessLogic.Services;
-using DataAccess.DataModels;
+
 using DataAccess.ViewModel;
 using Hallo_Doc.Models;
 using Hallo_Doc.Views.Patient;
@@ -13,10 +13,12 @@ namespace Hallo_Doc.Controllers
     {
         private readonly ILogger<PatientController> _logger;
         private readonly ILoginService _loginService;
-        public PatientController(ILogger<PatientController> logger,ILoginService loginService)
+        private readonly IRequestService _reqservice;
+        public PatientController(ILogger<PatientController> logger,ILoginService loginService,IRequestService requestservice)
         {
             _logger = logger;
             _loginService = loginService;
+            _reqservice = requestservice;
         }
         [HttpPost]
         public IActionResult Login(LoginUser loginuser)
@@ -32,6 +34,13 @@ namespace Hallo_Doc.Controllers
                 return RedirectToAction("Family", "Patient");
 
             
+        }
+        [HttpPost]
+
+        public IActionResult Patients(PatientReqModel patientreqmodel) {
+            
+            _reqservice.PatientData(patientreqmodel);   
+                return RedirectToAction("Family", "Patient");
         }
 
 

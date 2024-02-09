@@ -11,11 +11,12 @@ namespace DataAccess.ViewModel
    
         public class LoginUser
         {
-            [Required(ErrorMessage = "Email is required")]
-            public string email { get; set; }
+        [Required(ErrorMessage = "Email is required")]
+        public string email { get; set; } = null;
 
-            [Required(ErrorMessage = "Password is required")]
-            public string password { get; set; }
+        [Required(ErrorMessage = "Password is required")]
+        public string password { get; set; } = null;
+
         }
     }
 

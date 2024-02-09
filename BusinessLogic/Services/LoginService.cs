@@ -2,7 +2,7 @@
     using DataAccess.ViewModel;
     using DataAccess.DataModels;
     using DataAccess.DataContext;
-    using DataAccess.ViewModel;
+    
     using Microsoft.EntityFrameworkCore;
     using System;
     using System.Collections.Generic;

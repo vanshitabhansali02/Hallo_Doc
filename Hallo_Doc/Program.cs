@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseNpgsql(builder.Configuration.GetConnectionString("ApplicationDbContext")));
 builder.Services.AddScoped<ILoginService, LoginService>();
-
+builder.Services.AddScoped<IRequestService, RequestService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

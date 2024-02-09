@@ -11,6 +11,9 @@ namespace BusinessLogic.Interfaces
     public interface ILoginService
     {
         public bool LoginData(LoginUser loginuser);
+       
+
+
 
         // Add other relevant methods for your login service
     }

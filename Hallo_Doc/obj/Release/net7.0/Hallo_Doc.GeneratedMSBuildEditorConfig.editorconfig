@@ -16,26 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\pca135\Desktop\Hallo_Doc\Hallo_Doc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/pca135/Desktop/Hallo_Doc/Hallo_Doc/Views/Aspnetusers/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwbmV0dXNlcnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/pca135/Desktop/Hallo_Doc/Hallo_Doc/Views/Aspnetusers/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwbmV0dXNlcnNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/pca135/Desktop/Hallo_Doc/Hallo_Doc/Views/Aspnetusers/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwbmV0dXNlcnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/pca135/Desktop/Hallo_Doc/Hallo_Doc/Views/Aspnetusers/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwbmV0dXNlcnNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/pca135/Desktop/Hallo_Doc/Hallo_Doc/Views/Aspnetusers/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNwbmV0dXNlcnNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/pca135/Desktop/Hallo_Doc/Hallo_Doc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
