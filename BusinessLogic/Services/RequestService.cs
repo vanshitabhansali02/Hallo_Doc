@@ -31,17 +31,20 @@ namespace BusinessLogic.Services
             _db.Requests.Add(request);
             _db.SaveChanges();
 
-            var dob = patientmodel.BirthDate.ToString("yyyy");
+          //  var dob = patientmodel.BirthDate.ToString();
 
             
             Requestclient requestclient = new Requestclient();
+
+          
 
             requestclient.Requestid = 8;    
             requestclient.Firstname = patientmodel.Firstname;
             requestclient.Lastname= patientmodel.Lastname;
             requestclient.Phonenumber = patientmodel.Phonenumber;
             requestclient.Email=patientmodel.Email;
-            requestclient.Intyear = dob.Year();
+          
+            requestclient.Intyear = patientmodel.BirthDate.Year;
             requestclient.Regionid = 1;
             _db.Requestclients.Add(requestclient);
             _db.SaveChanges();

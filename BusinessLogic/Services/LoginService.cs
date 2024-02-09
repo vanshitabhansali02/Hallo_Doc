@@ -24,8 +24,8 @@
 
             public bool LoginData(LoginUser loginuser)
             {
-
-
+                 
+            
                 return _db.Aspnetusers.Any(x => x.Email == loginuser.email && x.Passwordhash == loginuser.password);
 
             }
