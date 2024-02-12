@@ -12,7 +12,7 @@ namespace BusinessLogic.Interfaces
     {
         public bool LoginData(LoginUser loginuser);
        
-        
+
 
 
         // Add other relevant methods for your login service

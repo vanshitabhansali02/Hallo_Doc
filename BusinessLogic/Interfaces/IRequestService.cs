@@ -9,9 +9,8 @@ namespace BusinessLogic.Interfaces
 {
     public interface IRequestService
     {
-        public void PatientData(PatientReq patientreq);
-        public void BusinessData(BusinessReq businessreq);
-       // public void ConciergeData(ConciergeReq conciergereq);
+        public void PatientData(PatientReqModel patientmodel);
+        
 
     }
 }
