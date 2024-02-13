@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BusinessLogic",
+    "\\DataAccess"
   ],
   "SelectedNode": "\\Hallo_Doc.sln",
   "PreviewInSolutionExplorer": false
