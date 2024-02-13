@@ -1,6 +1,6 @@
 ﻿using BusinessLogic.Interfaces;
 using BusinessLogic.Services;
-
+using DataAccess.DataContext;
 using DataAccess.ViewModel;
 using Hallo_Doc.Models;
 using Hallo_Doc.Views.Patient;
@@ -14,34 +14,72 @@ namespace Hallo_Doc.Controllers
         private readonly ILogger<PatientController> _logger;
         private readonly ILoginService _loginService;
         private readonly IRequestService _reqservice;
-        public PatientController(ILogger<PatientController> logger,ILoginService loginService,IRequestService requestservice)
+        private readonly ApplicationDbContext _db;
+
+        
+        public PatientController(ILogger<PatientController> logger,ILoginService loginService,IRequestService requestservice,ApplicationDbContext db)
         {
             _logger = logger;
             _loginService = loginService;
             _reqservice = requestservice;
+            _db = db;
         }
         [HttpPost]
         public IActionResult Login(LoginUser loginuser)
         {
-            if (_loginService.LoginData(loginuser))
+            if (ModelState.IsValid)
             {
-                // User is valid, perform login logic
-                return RedirectToAction("Site", "Patient");
+                if (_loginService.LoginData(loginuser))
+                {
+                    // User is valid, perform login logic
+                    TempData["message"] = "Valid User";
+                    return RedirectToAction("Site", "Patient");
+
+                }
+                else
+                {
+                    TempData["message"] = "invalid";
+                }
+
+                // Invalid user, handle accordingly (e.g., show error message)
 
             }
-           
-                // Invalid user, handle accordingly (e.g., show error message)
-                return RedirectToAction("Family", "Patient");
+            return RedirectToAction("Family", "Patient");
 
-            
+
         }
         [HttpPost]
 
-        public IActionResult Patients(PatientReqModel patientreqmodel) {
+        public IActionResult Patients(PatientReq patientreqmodel) {
             
             _reqservice.PatientData(patientreqmodel);   
                 return RedirectToAction("Family", "Patient");
         }
+        [HttpPost]
+
+        public IActionResult Family(PatientReq patientreqmodel)
+        {
+
+            _reqservice.PatientData(patientreqmodel);
+            return RedirectToAction("Family", "Patient");
+        }
+
+        [HttpPost]
+ public IActionResult Business(BusinessReq businessreqmodel)
+        {
+
+            _reqservice.BusinessData(businessreqmodel);
+            return RedirectToAction("Family", "Patient");
+        }
+        public JsonResult CheckEmailExists(string email)
+        {
+            bool emailExists = _db.Aspnetusers.Any(u => u.Email == email);
+            return Json(new { emailExists = emailExists });
+        }
+
+
+
+
 
 
         public IActionResult Site()

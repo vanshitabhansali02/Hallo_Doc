@@ -3,10 +3,16 @@
 @{
     ViewData["Title"] = "login";
 }
+@* if (@ViewBag.Message != null) {
+        <div id="popupdiv" style="border: 1px solid red; display: none;">
+            @ViewBag.Message
+        </div>
+        }
+*@
 
     
 @Html.Partial("_headermain")
-
+@Html.Partial("_ValidationScriptsPartial")
 <div class="container-fluid">
     <div class="background-img">
     </div>
@@ -21,7 +27,7 @@
             &nbsp;<strong class="text-info">Back</strong></a>
 
             <h1 class="">Login to Your Account</h1>
-            <form   method="post">
+            <form  id="loginfrm" method="post">
             <div class="form-floating mt-4">
                 <input type="text" class="form-control form-control-lg col-xs-12" id="floatingInput" placeholder="email" asp-for="email"/>
                 <label for="floatingInput">Email</label>
@@ -46,3 +52,23 @@
         </div>
     </div>
     @Html.Partial("_footermain")
+    @* <script>
+    $(document).ready(function () {
+    var x = $("#uname").val();
+    var y = $("#pswd").val();
+    $("#submit").on("click", function () {
+    if (error condition ) {
+    alert('username and password is null');
+    }
+    else {
+    var div = $("#popupdiv").text();
+    alert(div)
+    }
+
+    });
+    });
+    </script>*@
+
+    <script type="text/javascript">
+    toastr.success('@TempData["message"]');    
+    </script>
